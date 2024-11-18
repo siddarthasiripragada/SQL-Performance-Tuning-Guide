@@ -14,13 +14,15 @@ By following these techniques, you can identify bottlenecks in your queries, imp
 SQL Execution Order
 Understanding SQL's logical query processing order is fundamental to writing optimized queries. SQL queries don’t execute in the order they are written but rather follow a defined sequence of steps:
 
-FROM – Identify the source tables and apply joins.
-WHERE – Filter rows based on conditions.
-GROUP BY – Group the filtered data for aggregations.
-HAVING – Filter grouped data based on aggregate conditions.
-SELECT – Retrieve columns or computed results.
-DISTINCT – Remove duplicate rows from the result.
-ORDER BY – Sort the result set.
-LIMIT/OFFSET – Restrict the number of rows returned.
-By keeping the execution order in mind, you can craft queries that allow the database engine to process data efficiently, leveraging indexes, filtering early, and reducing the workload at each stage.
+```
+SQL_Execution_Order/
+├── 1_FROM/             # Identify the source tables and apply joins.
+├── 2_WHERE/            # Filter rows based on conditions.
+├── 3_GROUP_BY/         # Group the filtered data for aggregations.
+├── 4_HAVING/           # Filter grouped data based on aggregate conditions.
+├── 5_SELECT/           # Retrieve columns or computed results.
+├── 6_DISTINCT/         # Remove duplicate rows from the result.
+├── 7_ORDER_BY/         # Sort the result set.
+├── 8_LIMIT_OFFSET/     # Restrict the number of rows returned.
+```
 
