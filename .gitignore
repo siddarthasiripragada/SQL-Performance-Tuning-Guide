@@ -1,0 +1,25 @@
+# SQL and generated artifacts
+*.log
+*.tmp
+*.bak
+*.csv
+*.tsv
+*.xlsx
+
+# Python support files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
